@@ -14,12 +14,6 @@ class MealsController < ApplicationController
     # Times ordered, last ordered, ...
     @meal = Meal.find(params.require(:id))
   end
-  
-  def edit
-    # The catering service can edit a specific meal
-    # (as in, its ingredients)
-    @meal = Meal.find(params[:id])
-  end
 
   def new
     @meal = Meal.new
