@@ -16,6 +16,9 @@
           <li class="nav-item mx-1">
             <%= link_to 'My orders', "#", class: 'btn btn-sm btn-outline-primary' %>
           </li>
+          <li class="nav-item mx-1">
+            <%= link_to 'Dashboard', users_dashboard_path , class: 'btn btn-sm btn-outline-primary' %>
+          </li>
         </ul>
       </nav>
     <% elsif catering_signed_in? %>
